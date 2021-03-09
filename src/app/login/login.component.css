@@ -1,0 +1,107 @@
+.card {
+    box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 35%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    padding: 1%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.divForLogo {
+    height: 18%;
+}
+
+img#logo {
+    float: left;
+    line-height: 100%;
+    width: 35%;
+    size: 20p;
+}
+
+img#logo {
+    float: left;
+    width: 30%;
+    margin: 3% 0 3% 2%;
+}
+
+.btn-primary {
+    width: 100% !important;
+}
+
+.showCase {
+    display: flex;
+    flex-direction: row;
+}
+
+.divForForm {
+    height: 100%;
+    width: 45%;
+    padding: 2%;
+}
+
+#verticalHr {
+    border: 1px solid lightgray;
+    height: 30vh;
+    margin: 2%;
+}
+
+.forgetAnchor {
+    font-size: 13px;
+    margin: 3% 0 3% 0;
+}
+
+.forAnchors {
+    display: flex;
+    flex-direction: column;
+}
+
+.divForShowingCard {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1%;
+    width: 50%;
+}
+
+.forDummyCardDisplay {
+    width: 55%;
+    margin: 10% 0 2% 2%;
+}
+
+img.debitCardUImg {
+    width: 100%;
+}
+
+.content {
+    margin-left: 1%;
+    margin: 3% 0 3% 1%;
+}
+
+#accountp {
+    margin: 0 !important;
+}
+
+#registerP {
+    margin: 0 !important;
+}
+
+button.btn.btn-outline-primary {
+    font-size: 14px;
+}
+
+.forEnrollNowBtn {
+    margin-left: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

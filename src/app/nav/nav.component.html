@@ -1,0 +1,38 @@
+<div class="mainDiv">
+    <header>
+        <div class="mainHeadDiv">
+            <div class="divForLogo">
+                <img class="logo" src="../../assets//avionte_logo.png" alt="">
+            </div>
+            <div class="divForMainNav">
+                <div class="divForChilMainNav">
+                    <div class="navListsDisplayRow">
+                        <div class="mainNavLists" [ngClass]="{anchorActive:userClicked=== navItem.mainMenuTitle} " *ngFor="let navItem of navItems">
+                            <a class="anchor" [ngClass]="{anchoractive:userClicked=== navItem.mainMenuTitle}" (click)=" onClickMainMenuOpt(navItem);userClicked=navItem.mainMenuTitle "><b>{{navItem.mainMenuTitle}}</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divForUserProfileAndName ">
+                    <div class="forAvatar">
+                        <img src="../../assets/img_avatar.png" alt="" class="avatarImg">
+                    </div>
+                    <div class="forName">
+                        <b class="name">Bolorerdene B Mongal</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divForSubNav ">
+            <ul class="subMenuUl ">
+                <li class="subMenuLi " *ngFor="let subNavItem of subNavItems "><b>{{subNavItem}}</b></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contentDiv">
+        <div class="card">
+            <div class="card-header">
+                Page Title
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+[{
+        "mainMenuTitle": "Change",
+        "subMenusList": [
+            "Account Management",
+            "Card Inventary",
+            "subMenu3"
+        ]
+    },
+    {
+        "mainMenuTitle": "Instant Payment",
+        "subMenusList": [
+            "Payments",
+            "Transactions",
+            "Statements"
+        ]
+    },
+    {
+        "mainMenuTitle": "Loyality",
+        "subMenusList": [
+            "Program Participents",
+            "Rules",
+            "Program Mangement"
+        ]
+    }
+]
