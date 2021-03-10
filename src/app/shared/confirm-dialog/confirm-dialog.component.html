@@ -1,0 +1,14 @@
+<div class="mainDiv">
+    <div class="card">
+        <div class="card-header">
+            {{data.title}}
+        </div>
+        <div class="content">
+            <b class="contentinBold">{{data.message}} </b>
+        </div>
+    </div>
+    <div class="forBtns">
+        <button (click)="CloseDialog()" class="btn btn-outline-primary removeBorder">{{data.buttonForCloseDialog}}</button>
+        <button (click)="Confirm()" class="btn btn-outline-primary removeBorder">{{data.buttonForconfirmOrSubmit}}</button>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.card-header:first-child {
+    background: #4f4f4f;
+    color: #ffffff;
+}
+
+.card {
+    border: 1px solid #4f4f4f;
+    width: 95%;
+    height: 83vh;
+    margin: 1% 2.8% 0.5% 2%;
+}
+
+.forCahngePassword {
+    text-align: end;
+}
+
+.forCahngePasswordBtn {
+    margin: 1%;
+}
+
+.cardBody {
+    border-bottom: 2px solid #c2c2c2;
+    height: 82%;
+    max-height: 82%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+select {
+    border: 1px solid #ccc;
+    height: 46%;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    background-image: url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAlElEQVRIx+2VwQ3AIAhFwTiFi7KC7uYGHo1z0Et7MWkjaEiaQOJBDzy/wgdqrXwHWKyAiGAZDnSgHBhC+IfCUgqbKXxgGqhY4QyRQkUK35KLoK01iZd+xZKXRuEfbvdQPPGkAABEhMeLhohE5yfaAufk93791r13zQDmnLNqcOMYg1NKmoJgTRHtmDeaWZvPQweaAi8PXSmZJU3QRAAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-appearance: none;
+    border-radius: 5%;
+}
+
+label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.forForm {
+    padding-left: 2%;
+}
+
+input {
+    border: 1px solid #ccc;
+    height: 50% !important;
+}
+
+.suffixSelect {
+    height: 50% !important;
+}
+
+.spaceBtwRows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+hr {
+    border: 1px solid #c2c2c2;
+}

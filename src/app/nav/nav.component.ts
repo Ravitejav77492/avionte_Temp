@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-const navItems = require('../shared/navItems.json')
+import { Router } from '@angular/router';
+const navItems = require('../shared/navItems.json');
+import { ResourceService } from '../services/resourceService/resource.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -8,20 +10,31 @@ const navItems = require('../shared/navItems.json')
 export class NavComponent implements OnInit {
   navItems: any = navItems;
   subNavItems: any = navItems[0].subMenusList;
-  userClicked = 'Change'
+  userClicked = 'CHANGE Card'
+  resourceConstants: { navUserName: string; };
 
   constructor(
+    public resourceService: ResourceService,
+    private router: Router
 
   ) { }
 
   ngOnInit() {
-    console.log(this.subNavItems);
-
+    this.initResource();
   }
 
-  private onClickMainMenuOpt(data): any {
+  onClickMainMenuOpt(data): any {
     this.subNavItems = [];
     this.subNavItems = data.subMenusList;
   }
+  private initResource(): any {
+    this.resourceConstants = {
+      navUserName: this.resourceService.getConstValue('nav.userName'),
+    }
+  }
+  onSelectSubNavItem(navItem): any {
+    this.router.navigateByUrl(`ChangeCard/${navItem}`);
+  }
+
 
 }

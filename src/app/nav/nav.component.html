@@ -2,7 +2,7 @@
     <header>
         <div class="mainHeadDiv">
             <div class="divForLogo">
-                <img class="logo" src="../../assets//avionte_logo.png" alt="">
+                <img class="logo" src="../../assets/logoForLoginScreens.png" alt="">
             </div>
             <div class="divForMainNav">
                 <div class="divForChilMainNav">
@@ -17,22 +17,19 @@
                         <img src="../../assets/img_avatar.png" alt="" class="avatarImg">
                     </div>
                     <div class="forName">
-                        <b class="name">Bolorerdene B Mongal</b>
+                        <b class="name">{{resourceConstants.navUserName}}</b>
                     </div>
                 </div>
             </div>
         </div>
         <div class="divForSubNav ">
             <ul class="subMenuUl ">
-                <li class="subMenuLi " *ngFor="let subNavItem of subNavItems "><b>{{subNavItem}}</b></li>
+                <li class="subMenuLi " *ngFor="let subNavItem of subNavItems "><b (click)="onSelectSubNavItem(subNavItem)">{{subNavItem}}</b></li>
             </ul>
         </div>
     </header>
     <div class="contentDiv">
-        <div class="card">
-            <div class="card-header">
-                Page Title
-            </div>
-        </div>
+        <router-outlet></router-outlet>
+
     </div>
 </div>

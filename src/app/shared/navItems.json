@@ -1,9 +1,11 @@
 [{
-        "mainMenuTitle": "Change",
+        "mainMenuTitle": "CHANGE Card",
         "subMenusList": [
-            "Account Management",
-            "Card Inventary",
-            "subMenu3"
+            "Account",
+            "Activity",
+            "Statements",
+            "Transfers",
+            "Bill Pay"
         ]
     },
     {

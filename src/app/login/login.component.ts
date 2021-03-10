@@ -33,7 +33,15 @@ export class LoginComponent implements OnInit {
   onSubmitForm(formValues): any {
     if (formValues.userName === 'admin' && formValues.password === 'admin123') {
       Utils.SET_LOCAL_STORAGE('loggedIn', 'true');
+      this.route.navigateByUrl('ChangeCard');
     }
+  }
+
+  onClickForgotUserName(): any {
+    this.route.navigateByUrl('forgotUsername');
+  }
+  onClickForgotPassword(): any {
+    this.route.navigateByUrl('forgotPassword');
   }
 
   private initResource(): any {

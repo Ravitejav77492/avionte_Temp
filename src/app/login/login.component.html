@@ -1,7 +1,7 @@
 <div class="container">
     <div class="card">
         <div class="divForLogo">
-            <img id="logo" src="../../assets//avionte_logo.png" alt="">
+            <img id="logo" src="../../assets//logoForLoginScreens.png" alt="">
         </div>
         <div class="showCase">
             <div class="divForForm">
@@ -16,8 +16,8 @@
                     </div>
                     <button type="submit" (click)="onSubmitForm(loginForm.value)" [disabled]="loginForm.invalid" class="btn btn-primary">Login</button>
                     <div class="forAnchors">
-                        <a class="forgetAnchor">{{resourceConstants.forgotUserName}}</a>
-                        <a class="forgetAnchor">{{resourceConstants.forgotPassword}}</a>
+                        <a class="forgetAnchor" (click)="onClickForgotUserName()">{{resourceConstants.forgotUserName}}</a>
+                        <a class="forgetAnchor" (click)="onClickForgotPassword()">{{resourceConstants.forgotPassword}}</a>
                     </div>
                 </form>
             </div>

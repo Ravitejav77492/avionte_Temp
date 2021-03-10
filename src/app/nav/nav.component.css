@@ -14,7 +14,7 @@
 }
 
 .logo {
-    width: 70%;
+    width: 90%;
     margin: 2%;
     height: 80%;
 }
@@ -49,8 +49,8 @@ a.anchor {
 .anchorActive {
     color: #ffffff;
     background: #0070c0;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     padding: 0 2% 0 2%;
     margin-top: 1%;
     line-height: 40px;
@@ -58,13 +58,12 @@ a.anchor {
 
 .anchoractive {
     color: #ffffff !important;
-    /* line-height: 50px; */
-    /* color: #4f4f4f; */
     font-family: Poppins;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     cursor: pointer;
+    /* font-size: 100%; */
 }
 
 .divForSubNav {
@@ -94,6 +93,14 @@ li {
 li.subMenuLi {
     margin-right: 2%;
     cursor: pointer;
+    font-family: Poppins;
+    font-size: 100%;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: #ffffff;
 }
 
 .mainHeadDiv {
@@ -130,17 +137,4 @@ b.name {
     color: #0070c0;
     position: absolute;
     top: 20%;
-}
-
-.card-header:first-child {
-    background: #4f4f4f;
-    color: #ffffff;
-}
-
-.card {
-    border: 1px solid #4f4f4f;
-    width: 95%;
-    height: 80vh;
-    margin: 0 auto;
-    margin-top: 1%;
 }

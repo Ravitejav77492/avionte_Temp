@@ -9,3 +9,15 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+
+.mat-dialog-container {
+    padding: 0 !important;
+}
+
+.removeBorder {
+    border: none !important;
+}
+
+.removeBorder:hover {
+    background-color: #0070c0;
+}

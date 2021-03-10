@@ -1,0 +1,43 @@
+.card-header {
+    background-color: #4f4f4f;
+    color: #ffffff;
+    margin: 0;
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    height: 30.1% !important;
+}
+
+.mainDiv {
+    height: 100%;
+}
+
+.card {
+    height: 65%;
+}
+
+.content {
+    padding: 3% 6.5% 0% 6.5%;
+}
+
+.contentinBold {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #4f4f4f;
+    font-size: 16px;
+}
+
+.forBtns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    justify-content: flex-end;
+    padding: 4% 5% 0 0px;
+}
