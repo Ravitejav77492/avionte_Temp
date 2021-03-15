@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CoreModule } from './shared/core.Module';
+import { ChangePasswordInstructionComponent } from './shared/change-password-instruction/change-password-instruction.component';
+import { httpInterceptorProviders } from './services/interceptors';
+import { CanActivateAuthGuardService } from './services/routeGuards/can-activate-auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -21,15 +24,16 @@ import { CoreModule } from './shared/core.Module';
     LoginComponent,
     ForgotUserNameComponent,
     ForgotPasswordComponent,
+    ChangePasswordInstructionComponent,
 
   ],
   imports: [
     BrowserModule,
-    CoreModule
+    CoreModule,
 
   ],
   entryComponents: [ConfirmDialogComponent],
-  providers: [],
+  providers: [httpInterceptorProviders,CanActivateAuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

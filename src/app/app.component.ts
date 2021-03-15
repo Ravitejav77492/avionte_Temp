@@ -9,7 +9,6 @@ export class AppComponent {
   title = 'Avionte';
   ngOninit(): void {
     this.checkLoginStatus();
-
   }
 
   checkLoginStatus(): boolean {

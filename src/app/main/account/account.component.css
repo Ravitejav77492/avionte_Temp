@@ -6,7 +6,7 @@
 .card {
     border: 1px solid #4f4f4f;
     width: 95%;
-    height: 83vh;
+    height: 80vh;
     margin: 1% 2.8% 0.5% 2%;
 }
 
@@ -69,4 +69,135 @@ input {
 
 hr {
     border: 1px solid #c2c2c2;
+    width: 63%;
+}
+
+.btns {
+    text-align: end;
+    margin: 2%;
+}
+
+.saveForm {
+    width: 4%;
+    padding: 0.3%;
+    border-radius: 4px;
+    border: solid 1px #c9c9c9;
+    background-color: #f2f2f2;
+    color: #c2c2c2;
+    font-size: 92%;
+}
+
+.cancelForm {
+    background-color: #ffffff;
+    width: 4%;
+    padding: 0.3%;
+    border-radius: 4px;
+    color: #2996B2;
+    font-family: Poppins;
+    font-size: 92%;
+    font-weight: bold;
+}
+
+.blueColor {
+    background-color: #2996B2 !important;
+    width: 4%;
+    padding: 0.3%;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 92%;
+}
+
+.whiteColor {
+    background-color: #f2f2f2 !important;
+    width: 4%;
+    padding: 0.3%;
+    border-radius: 4px;
+    color: #c9c9c9;
+    font-family: Poppins;
+    font-size: 92%;
+}
+
+.checkboxes {
+    /* padding-top: 4%; */
+}
+
+.numberAndEmail {
+    /* width: 129%; */
+}
+
+.verificationBtn {
+    /* margin-left: -6%; */
+}
+
+.verifi {
+    display: flex;
+}
+
+.verifyInputBox {
+    margin-right: 2%;
+    height: 172%;
+    width: 55%;
+    padding-top: 1%;
+}
+
+.verifyBtn1 {
+    border: none;
+    color: white;
+    padding: 6px 14px 4px;
+    text-align: center;
+    font-size: 95%;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0% 0% 0% 7%;
+}
+
+.resendBtn {
+    width: 169%;
+    height: 87%;
+    padding: 1px;
+    margin-left: -70%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #4f4f4f;
+}
+
+.divForManualInputs {
+    padding-left: 0 !important;
+}
+
+.manualWidthForMobileNumInput {
+    width: 22%;
+    padding-left: 1%;
+}
+
+.checkboxes {
+    margin-left: 1.5%;
+    padding-top: 1%;
+    padding-right: 0;
+    /* padding-left: 0; */
+}
+
+#testAlertLabel {
+    margin-top: 6% !important;
+}
+
+.verificationBtn {
+    padding-top: 1%;
+    padding-left: 0;
+    /* margin: 0; */
+}
+
+.forBtns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    justify-content: flex-end;
+    margin: 2%;
 }

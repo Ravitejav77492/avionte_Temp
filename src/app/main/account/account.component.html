@@ -1,57 +1,154 @@
 <div class="card">
     <div class="card-header">
-        User Profile of Sample Name
+        {{userFormUIConfig.header}}
     </div>
     <div class="cardBody">
         <div class="forCahngePassword">
-            <button class="btn btn-outline-primary forCahngePasswordBtn">Change Password</button>
+            <button class="btn btn-outline-primary forCahngePasswordBtn" (click)="changePassword()">{{userFormUIConfig.changePassword}}</button>
         </div>
         <div class="forForm">
-            <form class="spaceBtwRows">
+            <form class="spaceBtwRows" [formGroup]="userForm">
                 <div class="row">
                     <div class="col-md-2">
-                        <label for="Salutation">Salutation</label>
-                        <select class="form-control">
-                            <option>Mr.</option>
-                            <option>Mrs</option>
+                        <label for="Salutation">{{userFormUIConfig.salutationLabel}}</label>
+                        <select class="form-control" formControlName="userSalutation">
+                            <option *ngFor="let salut1 of salutation01" value="{{salut1.value}}">{{salut1.value}}
+                            </option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" placeholder="First name">
+                        <label for="firstName">{{userFormUIConfig.fName}}</label>
+                        <input type="text" class="form-control" placeholder="First name" formControlName="fName">
                     </div>
                     <div class="col-md-2">
-                        <label for="Middleinitial">Middle initial</label>
-                        <input type="text" class="form-control" placeholder="Middle initial">
+                        <label for="Middleinitial">{{userFormUIConfig.mName}}</label>
+                        <input type="text" class="form-control" placeholder="Middle initial" formControlName="mName">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last name">
+                        <label for="lastName">{{userFormUIConfig.lName}}</label>
+                        <input type="text" class="form-control" placeholder="Last name" formControlName="lName">
                     </div>
                     <div class=" col-md-2">
-                        <label for="Salutation">Suffix</label>
-                        <select class="form-control suffixSelect">
-                            <option>Mr.</option>
-                            <option>Mrs</option>
+                        <label for="Salutation">{{userFormUIConfig.suffix}}</label>
+                        <select class="form-control suffixSelect" formControlName="userSalutation2">
+                            <option *ngFor="let salut2 of salutation02" value="{{salut2.value}}">{{salut2.value}}
+                            </option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2">
-                        <label for="securityNum">Social Security Number</label>
-                        <input type="text" class="form-control" placeholder="Social Security Number">
+                        <label for="securityNum">{{userFormUIConfig.ssnNum}}</label>
+                        <input type="text" class="form-control" placeholder="Social Security Number" formControlName="ssnNumber">
                     </div>
                     <div class="col-md-2">
-                        <label for="Middleinitial">Middle initial</label>
-                        <input type="date" class="form-control" placeholder="Middle initial">
+                        <label for="Middleinitial">{{userFormUIConfig.middleInit}}</label>
+                        <input type="date" class="form-control" placeholder="Middle initial" formControlName="midInitDate">
                     </div>
                 </div>
-                <hr class="col-md-6">
+                <hr class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="address1">{{userFormUIConfig.addr1}}</label>
+                        <input type="text" class="form-control" placeholder="Address Line 1" formControlName="addr1">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="address">{{userFormUIConfig.addr2}}</label>
+                        <input type="text" class="form-control" placeholder="Address Line 2" formControlName="addr2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="city">{{userFormUIConfig.city}}</label>
+                        <input type="text" class="form-control" placeholder="City Name" formControlName="cityName">
+                    </div>
+                    <div class=" col-md-2">
+                        <label for="State">{{userFormUIConfig.state}}</label>
+                        <select class="form-control suffixSelect" formControlName="stateName">
+                            <option *ngFor="let state of states" value="{{state.value}}">{{state.value}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="Zip">{{userFormUIConfig.zip}}</label>
+                        <input type="text" class="form-control" placeholder="Zip code" formControlName="zipCode">
+                    </div>
+                </div>
+                <hr class="col-md-8">
+                <div class="row">
+                    <div class="manualWidthForMobileNumInput">
+                        <label for="MobNum">{{userFormUIConfig.mobPhone}}</label>
+                        <input type="text" class="form-control numberAndEmail" placeholder="Mobile Phone" formControlName="phnNum">
+                    </div>
+                    <div class="col-md-2 checkboxes">
+                        <input class="form-check-input" type="checkbox" value="" (change)="toggleButtons($event)" id="flexCheckDefault" formControlName="checkboxValue1" style="zoom:1.2;">
+                        <label class="form-check-label" id="testAlertLabel" for="flexCheckDefault">
+                            {{userFormUIConfig.textAlert}}
+                        </label>
+                    </div>
+                    <div class="col-md-4 verificationBtn">
+                        <button type="button" class="btn btn-primary" *ngIf="isDisplayText" (click)="sendVerificationText()">{{userFormUIConfig.sndVerfText}}</button>
+                        <div class="row" *ngIf="isShow">
+                            <div class="verifi">
+                                <div class="verifyInputBox"><input type="text" class="form-control" placeholder="Enter Verification"></div>
+                                <div class="verifyInputBox"><button class="btn btn-primary verifyBtn1">{{userFormUIConfig.verify}}</button></div>
+                                <div><button class="btn btn-outline-primary resendBtn">{{userFormUIConfig.resndVerif}}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="manualWidthForMobileNumInput">
+                        <label for="HomePhone">{{userFormUIConfig.homePhn}}</label>
+                        <input type="text" class="form-control numberAndEmail" placeholder="Home Phone" formControlName="homePhone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="manualWidthForMobileNumInput">
+                        <label for="Email">{{userFormUIConfig.email}}</label>
+                        <input type="email" class="form-control numberAndEmail" placeholder="Email" formControlName="emailId">
+                    </div>
+                    <div class="col-md-2 checkboxes">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" formControlName="checkboxValue2" (change)="toggleButton($event)" style="zoom:1.2;">
+                        <label class="form-check-label" id="testAlertLabel" for="flexCheckDefault">
+                            {{userFormUIConfig.emailAlert}}
+                        </label>
+                    </div>
+                    <div class="col-md-4 verificationBtn">
+                        <button type="button" *ngIf="isDisplay" class="btn btn-primary" (click)="sendVerificationEmail()">{{userFormUIConfig.sndVerfEmail}}</button>
+                        <div class="row" *ngIf="isShowEmail">
+                            <div class="verifi">
+                                <div class="verifyInputBox"><input type="text" class="form-control" placeholder="Enter Verification"></div>
+                                <div class="verifyInputBox"><button class="btn btn-primary verifyBtn1">{{userFormUIConfig.verify}}</button></div>
+                                <div><button class="btn btn-outline-primary resendBtn">{{userFormUIConfig.resndVerif}}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="nickName">{{userFormUIConfig.nickName}}</label>
+                        <input type="text" class="form-control" placeholder="Nick Name">
+                    </div>
+                </div>
             </form>
         </div>
     </div>
+    <!-- <div class="btns">
+        <button type="button" class="btn btn-light cancelForm"
+            >{{userFormUIConfig.cancelBtn}}</button>
+        <button class="btn btn-secondary btn-sm saveForm" [class.whiteColor]="!userForm.valid"
+            [class.blueColor]="userForm.valid" 
+            >{{userFormUIConfig.saveBtn}}</button>
+    </div> -->
+    <div class="forBtns">
+        <button class="btn btn-outline-primary removeBorder" (click)="cancelUserForm()">{{userFormUIConfig.cancelBtn}}</button>
+        <button class="btn btn-outline-primary removeBorder" (click)="saveUserForm()">{{userFormUIConfig.saveBtn}}</button>
+    </div>
+
 </div>
