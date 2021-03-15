@@ -4,6 +4,7 @@ import { ForgotPasswordComponent } from './login/forgot-password/forgot-password
 import { ForgotUserNameComponent } from './login/forgot-user-name/forgot-user-name.component';
 import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
+import { CanActivateAuthGuardService } from './services/routeGuards/can-activate-auth-guard.service';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   {
     path: 'ChangeCard',
     loadChildren: () => import('./main/changecard/changecard.module').then(m => m.ChangecardModule),
+    // canActivate: [CanActivateAuthGuardService]
   },
 ];
 
