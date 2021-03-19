@@ -1,0 +1,66 @@
+<div class="enroll_mainContainer">
+    <header class="enroll_header">
+        <h2 class="enroll_SubHeader">Enter Cardholder Details</h2>
+    </header>
+    <div class="enroll_Content">
+        <div class="mainDiv">
+            <div class="forForm">
+                <form>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label for="UserName">User Name</label>
+                            <input type="text" class="form-control" placeholder="User Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label for="Password">Password</label>
+                            <input type="Password" class="form-control" placeholder="0000000000000000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label for="Re-EnterPassword">Re-Enter Password</label>
+                            <input type="Password" class="form-control" placeholder="0000000000000000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" placeholder="0000000000000000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label for="Re-EnterEmail">Re-Enter Email</label>
+                            <input type="email" class="form-control" placeholder="0000000000000000">
+                        </div>
+                    </div>
+
+                    <div class="forBtns col-md-10">
+                        <div class="forBtns">
+                            <button class="btn btn-outline-primary removeBorder">CANCEL</button>
+                            <button type="button" class="btn btn-outline-primary addnavyBlueBackGround" (click)="submitAndNext()">NEXT</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="forPsswordHint">
+                <p class="passWordHintHead">Please use the following guidelines when choosing a password:</p>
+                <p class="passWordHintSubHead">Your Password must:
+                </p>
+                <ul class="UnordersedList">
+                    <li class="passswordHintsLists"> Be different than Username</li>
+                    <li class="passswordHintsLists">Be between 8 and 20 characters</li>
+                    <li class="passswordHintsLists">Not contain spaces</li>
+                    <li class="passswordHintsLists">Not match previous 10 passwords</li>
+                    <li class="passswordHintsLists"> Contain 1 number</li>
+                    <li class="passswordHintsLists">Contain 1 special character</li>
+                    <li class="passswordHintsLists">Contain 1 lowercase character</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -5,9 +5,11 @@
     padding: 0;
 }
 
+html,
 body {
     margin: 0;
     font-family: sans-serif;
+    height: 100%;
 }
 
 .mat-dialog-container {
@@ -20,4 +22,70 @@ body {
 
 .removeBorder:hover {
     background-color: #0070c0;
+}
+
+:root {
+    --navyBlue: #404d67;
+    --blueBackground: #0070c0;
+    --enrollContentBackGround: #f4f2f2
+}
+
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+main {
+    padding: 10px;
+}
+
+
+/* for sidenav to take a whole page */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+/* GLOBAL STYLES FOR COMPONENTS BELONGS TO ENROLL MODULE */
+
+.Enroll_Container {
+    height: 100%;
+}
+
+.Enroll_toShowRoutedPages {
+    height: 89%;
+}
+
+.enroll_mainContainer {
+    height: 100%;
+}
+
+.enroll_header {
+    height: 5.9%;
+    background-color: var(--navyBlue);
+    padding-top: 0.5%;
+}
+
+.enroll_Content {
+    height: 95%;
+    background-color: var(--enrollContentBackGround);
+}
+
+h2.enroll_SubHeader {
+    margin-left: 8.5%;
+    color: #ffff;
+}
+
+@media only screen and (max-width: 600px) {
+    h2.enroll_SubHeader {
+        font-size: 15px;
+    }
 }

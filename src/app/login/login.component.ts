@@ -19,8 +19,10 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.reDirect();
     this.initForm();
     this.initResource();
+
   }
 
   initForm(): any {
@@ -54,6 +56,16 @@ export class LoginComponent implements OnInit {
       registerHere: this.resourceService.getConstValue('login.registerHere'),
       enrollBtn: this.resourceService.getConstValue('login.enroll.btn')
     }
+  }
+
+  reDirect(): any {
+    if (Utils.GET_LOCAL_STORAGE("loggedIn") === 'true') {
+      this.route.navigateByUrl('ChangeCard');
+    }
+  }
+
+  enrollUser(): any {
+    this.route.navigateByUrl('enroll');
   }
 }
 

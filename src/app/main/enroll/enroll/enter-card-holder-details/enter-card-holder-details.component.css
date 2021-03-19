@@ -1,0 +1,114 @@
+label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.input {
+    border: 1px solid #ccc;
+    height: 50% !important;
+}
+
+.addnavyBlueBackGround {
+    background-color: var(--navyBlue) !important;
+    color: #ffff;
+    border: none !important;
+}
+
+.removeBorder {
+    color: var(--navyBlue);
+}
+
+.removeBorder:hover {
+    background-color: var(--navyBlue) !important;
+    color: #ffff;
+}
+
+.forBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1%;
+}
+
+.row {
+    margin-top: 1%;
+}
+
+label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+input {
+    border: 1px solid #ccc;
+    height: 50% !important;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .forForm {
+        padding: 4% !important;
+        width: 100% !important;
+    }
+}
+
+.forPsswordHint {
+    padding: 3.5% 0 0 3%;
+}
+
+.forForm {
+    padding: 1.5% 0 0 13%;
+    width: 46%;
+}
+
+.passWordHintHead {
+    font-family: Assistant;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #404d67;
+}
+
+.passWordHintSubHead {
+    font-family: Assistant;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: #404d67;
+}
+
+ul.UnordersedList {
+    margin-left: 7%;
+}
+
+.passswordHintsLists {
+    font-family: Assistant;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: #404d67;
+}

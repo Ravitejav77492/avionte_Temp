@@ -1,0 +1,47 @@
+<div class="enroll_mainContainer">
+    <header class="enroll_header">
+        <h2 class="enroll_SubHeader">Enter CHANGE Card Details</h2>
+    </header>
+    <div class="enroll_Content">
+        <div class="forForm">
+            <form>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">CHANGE Card Number</label>
+                        <input type="text" class="form-control" placeholder="0000000000000000">
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <label for="CardExpirationDate">Card Expiration Date</label>
+                        <input type="date" class="form-control" placeholder="00/0000">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="CVVNumber">3 Digit CVV Number</label>
+                        <input type="number" class="form-control" placeholder="000">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row forBtns col-md-4">
+                    <div class="forBtns">
+                        <button class="btn btn-outline-primary removeBorder">CANCEL</button>
+                        <button type="button" class="btn btn-outline-primary addnavyBlueBackGround" (click)="submitAndNext()">NEXT</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

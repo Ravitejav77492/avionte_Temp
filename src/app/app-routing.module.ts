@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'ChangeCard',
     loadChildren: () => import('./main/changecard/changecard.module').then(m => m.ChangecardModule),
-    // canActivate: [CanActivateAuthGuardService]
+    canActivate: [CanActivateAuthGuardService]
+  },
+  {
+    path: 'enroll',
+    loadChildren: () => import('./main/enroll/enroll.module').then(m => m.EnrollModule),
   },
 ];
 

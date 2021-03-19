@@ -48,7 +48,7 @@ a.anchor {
 
 .anchorActive {
     color: #ffffff;
-    background: #0070c0;
+    background: var(--blueBackground);
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     padding: 0 2% 0 2%;

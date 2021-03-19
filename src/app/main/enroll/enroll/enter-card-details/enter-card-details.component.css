@@ -1,0 +1,65 @@
+label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.input {
+    border: 1px solid #ccc;
+    height: 50% !important;
+}
+
+.addnavyBlueBackGround {
+    background-color: var(--navyBlue) !important;
+    color: #ffff;
+    border: none !important;
+}
+
+.removeBorder {
+    color: var(--navyBlue);
+}
+
+.removeBorder:hover {
+    background-color: var(--navyBlue) !important;
+    color: #ffff;
+}
+
+.forBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.forForm {
+    padding-left: 13%;
+    padding-top: 1.5%;
+}
+
+.row {
+    margin-top: 1%;
+}
+
+label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+input {
+    border: 1px solid #ccc;
+    height: 50% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .forForm {
+        padding: 4%;
+    }
+}

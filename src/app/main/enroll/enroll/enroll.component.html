@@ -1,0 +1,13 @@
+<div class="Enroll_Container">
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav role="navigation">
+            <app-enroll-side-nav (sidenavClose)="sidenav.close()"></app-enroll-side-nav>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <app-enroll-header (sidenavToggle)="sidenav.toggle()"></app-enroll-header>
+            <div class="Enroll_toShowRoutedPages">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

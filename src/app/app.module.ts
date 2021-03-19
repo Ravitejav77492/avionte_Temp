@@ -25,7 +25,6 @@ import { CanActivateAuthGuardService } from './services/routeGuards/can-activate
     ForgotUserNameComponent,
     ForgotPasswordComponent,
     ChangePasswordInstructionComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -33,7 +32,7 @@ import { CanActivateAuthGuardService } from './services/routeGuards/can-activate
 
   ],
   entryComponents: [ConfirmDialogComponent],
-  providers: [httpInterceptorProviders,CanActivateAuthGuardService],
+  providers: [httpInterceptorProviders, CanActivateAuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,25 @@
+<header>
+    <mat-toolbar>
+        <div fxHide.gt-xs>
+            <button mat-icon-button (click)="onToggleSidenav()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <div class="forImg">
+            <img [src]="imgSrc" class="logoImage" alt="">
+        </div>
+        <div class="forNavItems" fxHide.xs>
+            <ul fxLayout class="navigation-items">
+                <li class="navItemLi">
+                    <a class="navItems">FEATURES</a>
+                </li>
+                <li class="navItemLi">
+                    <a class="navItems">ACTIVATE A CARD</a>
+                </li>
+                <li class="navItemBtn">
+                    <button class="btn btn-warning btn-lg accountLoginBtn">Account Login</button>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar>
+</header>

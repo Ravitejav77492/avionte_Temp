@@ -14,13 +14,11 @@ export class CanActivateAuthGuardService implements CanActivate {
   ) { }
 
   canActivate(): boolean {
-    if (localStorage.getItem('loggedIn') === 'true') {
-      console.log('fsff');
-      this.router.navigateByUrl('ChangeCard');
-      return true;
-    } else {
+    if (!(localStorage.getItem('loggedIn') === 'true')) {
       this.router.navigateByUrl('login');
       return false;
+    } else {
+      return true;
     }
   }
 }

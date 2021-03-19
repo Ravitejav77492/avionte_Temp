@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpResponse } from '@angular/common/http';
-import { HostService } from 'src/app/services/host.service';
 import { Utils } from 'src/app/shared/utilities/utils';
 import { catchError, finalize, tap } from 'rxjs/operators';
+import { HostService } from '../main/host.service';
 
 @Injectable()
 

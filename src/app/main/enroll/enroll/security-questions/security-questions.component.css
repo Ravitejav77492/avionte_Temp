@@ -1,0 +1,99 @@
+label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.input {
+    border: 1px solid #ccc;
+    height: 50% !important;
+}
+
+.addnavyBlueBackGround {
+    background-color: var(--navyBlue) !important;
+    color: #ffff;
+    border: none !important;
+}
+
+.removeBorder {
+    color: var(--navyBlue);
+}
+
+.removeBorder:hover {
+    background-color: var(--navyBlue) !important;
+    color: #ffff;
+}
+
+.forBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 10px;
+    margin: 1% 0 0 4%;
+}
+
+.forForm {
+    padding: 1.5% 0 0 13%;
+}
+
+.displayFormsFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 46%;
+}
+
+.row {
+    margin-top: 1%;
+}
+
+label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+input {
+    border: 1px solid #ccc;
+    height: 50% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .forForm {
+        padding: 4%;
+        width: 100% !important;
+    }
+    form {
+        width: 100%;
+    }
+}
+
+select {
+    border: 1px solid #ccc;
+    height: 55%;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    border-radius: 5%;
+}
+
+.passWordHintHead {
+    font-family: Assistant;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #404d67;
+}

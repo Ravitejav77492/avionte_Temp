@@ -16,9 +16,9 @@ export class AccountComponent implements OnInit {
   isShow = false;
   isShowEmail = false;
   userForm: FormGroup
-  salutation01: any[] = [{value: 'Mr.'}, {value:'Mrs'}];
-  salutation02: any[] = [{value: 'Mr.'}, {value:'Mrs'}];
-  states: any[] = [{value: 'Karnataka'}, {value: 'Andhra'}];
+  salutation01: any[] = [{ value: 'Mr.' }, { value: 'Mrs' }];
+  salutation02: any[] = [{ value: 'Mr.' }, { value: 'Mrs' }];
+  states: any[] = [{ value: 'Karnataka' }, { value: 'Andhra' }];
   userFormUIConfig: {
     header: string,
     changePassword: string,
@@ -45,14 +45,14 @@ export class AccountComponent implements OnInit {
     sndVerfEmail: string,
     cancelBtn: string,
     saveBtn: string,
-    nickName:string
+    nickName: string
   };
 
   constructor(
     private fb: FormBuilder,
     private dialog: MatDialog,
     private resourceServ: ResourceService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.initForm();
@@ -118,7 +118,7 @@ export class AccountComponent implements OnInit {
   }
 
   toggleButton(event) {
-    if(event.target.checked) {
+    if (event.target.checked) {
       this.isDisplay = true;
     } else {
       this.isShowEmail = false;
